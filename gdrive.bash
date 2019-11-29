@@ -7,12 +7,6 @@ FIRST_OPTION=$1
 SECOND_OPTION=$2
 THIRD_OPTION=$3
 
-# Color variables
-GREEN='\e[32m'
-RED='\e[31m'
-YELLOW='\e[33m'
-REMOVE='\e[0m'
-
 if [ ! -d "${BUTGG_DIR}" ]
 then
     mkdir ${BUTGG_DIR}
