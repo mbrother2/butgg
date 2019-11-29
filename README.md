@@ -32,14 +32,14 @@ $HOME (/root or /home/$USER)
 # How to use
 **On Linux system:**
 ```
-curl -o butgg.bash https://raw.githubusercontent.com/mbrother2/backuptogoogle/master/butgg.bash
+curl -o butgg.bash https://raw.githubusercontent.com/mbrother2/butgg/master/butgg.bash
 bash butgg.bash --setup
 ```
 
 # Wiki
-##### [Create own Google credential step by step](https://github.com/mbrother2/backuptogoogle/wiki/Create-own-Google-credential-step-by-step)
-##### [Get Google folder ID](https://github.com/mbrother2/backuptogoogle/wiki/Get-Google-folder-ID)
-##### [Turn on 2 Step Verification & create app's password for Google email](https://github.com/mbrother2/backuptogoogle/wiki/Turn-on-2-Step-Verification-&-create-app's-password-for-Google-email)
+##### [Create own Google credential step by step](https://github.com/mbrother2/butgg/wiki/Create-own-Google-credential-step-by-step)
+##### [Get Google folder ID](https://github.com/mbrother2/butgg/wiki/Get-Google-folder-ID)
+##### [Turn on 2 Step Verification & create app's password for Google email](https://github.com/mbrother2/butgg/wiki/Turn-on-2-Step-Verification-&-create-app's-password-for-Google-email)
 
 # Change log
 https://github.com/mbrother2/butgg/blob/master/CHANGLOG.md
@@ -63,7 +63,7 @@ Options:
 
 # Command
 ###### 1. Help
-`butgg.bash --help` (or `butgg.sh --help` on BSD system)
+`butgg.bash --help`
 Show help message and exit
 ##### Example
 ```
@@ -83,7 +83,7 @@ Options:
 ```
 
 ###### 2. Setup
-`butgg.bash --setup` (or `butgg.sh --setup` on BSD system)
+`butgg.bash --setup`
 Set up or reset all scripts & config file
 ##### Example
 ```
@@ -117,7 +117,7 @@ thanh3@ubuntu1804:~$ bash butgg.bash --setup
 100 13999  100 13999    0     0  52235      0 --:--:-- --:--:-- --:--:-- 52430
 [ 29/11/2019 08:32:40 ] Check md5sum for file butgg.bash successful
 [ 29/11/2019 08:32:40 ] Setting up gdrive credential...
-Read more: https://github.com/mbrother2/backuptogoogle/wiki/Create-own-Google-credential-step-by-step
+Read more: https://github.com/mbrother2/butgg/wiki/Create-own-Google-credential-step-by-step
  Your Google API client_id: 782896115405-qs2evi3rqlnkjm2vond8onilq9xxxxxx.apps.googleusercontent.com
  Your Google API client_secret: g7p_kcdNEq_ULsfxrTxxxxxx
 
@@ -137,10 +137,10 @@ Free : 15.00 GB
  Which directory on your server do you want to upload to Google Drive?(default /home/thanh3/backup): 
  How many days do you want to keep backup on Google Drive?(default 7): 
 
-Read more https://github.com/mbrother2/backuptogoogle/wiki/Get-Google-folder-ID
+Read more https://github.com/mbrother2/butgg/wiki/Get-Google-folder-ID
  Your Google folder ID(default None): 
 
-Read more https://github.com/mbrother2/backuptogoogle/wiki/Turn-on-2-Step-Verification-&-create-app's-password-for-Google-email
+Read more https://github.com/mbrother2/butgg/wiki/Turn-on-2-Step-Verification-&-create-app's-password-for-Google-email
  Do you want to send email if upload error(default no)(y/n): 
 
 [ 29/11/2019 08:34:05 ] [WARNING] Directory /home/thanh3/backup does not exist! Ensure you will be create it after.
@@ -188,10 +188,10 @@ thanh3@ubuntu1804:~$ butgg.bash --setup config
  Which directory on your server do you want to upload to Google Drive?(default /home/thanh3/backup): 
  How many days do you want to keep backup on Google Drive?(default 7): 
 
-Read more https://github.com/mbrother2/backuptogoogle/wiki/Get-Google-folder-ID
+Read more https://github.com/mbrother2/butgg/wiki/Get-Google-folder-ID
  Your Google folder ID(default None): 
 
-Read more https://github.com/mbrother2/backuptogoogle/wiki/Turn-on-2-Step-Verification-&-create-app's-password-for-Google-email
+Read more https://github.com/mbrother2/butgg/wiki/Turn-on-2-Step-Verification-&-create-app's-password-for-Google-email
  Do you want to send email if upload error(default no)(y/n): 
 
 [ 29/11/2019 08:53:50 ] [WARNING] Directory /home/thanh3/backup does not exist! Ensure you will be create it after.
@@ -210,7 +210,7 @@ Read more https://github.com/mbrother2/backuptogoogle/wiki/Turn-on-2-Step-Verifi
 ```
 
 ---
-`butgg.bash --setup credential` (or `butgg.sh --setup credential` on BSD system)
+`butgg.bash --setup credential`
 Only reset Google Drive token
 ##### Example
 ```
@@ -222,7 +222,6 @@ thanh3@ubuntu1804:~$ butgg.bash --setup credential
 [ 29/11/2019 08:54:20 ] Directory /home/thanh3/bin existed. Skip
 [ 29/11/2019 08:54:20 ] Check write to /home/thanh3/bin successful
 [ 29/11/2019 08:54:20 ] Setting up gdrive credential...
-
 
 Authentication needed
 Go to the following url in your browser:
@@ -268,10 +267,10 @@ Free : 15.00 GB
  Which directory on your server do you want to upload to Google Drive?(default /home/thanh3/backup): 
  How many days do you want to keep backup on Google Drive?(default 7): 
 
-Read more https://github.com/mbrother2/backuptogoogle/wiki/Get-Google-folder-ID
+Read more https://github.com/mbrother2/butgg/wiki/Get-Google-folder-ID
  Your Google folder ID(default None): 
 
-Read more https://github.com/mbrother2/backuptogoogle/wiki/Turn-on-2-Step-Verification-&-create-app's-password-for-Google-email
+Read more https://github.com/mbrother2/butgg/wiki/Turn-on-2-Step-Verification-&-create-app's-password-for-Google-email
  Do you want to send email if upload error(default no)(y/n): 
 
 [ 29/11/2019 08:56:35 ] [WARNING] Directory /home/thanh3/backup does not exist! Ensure you will be create it after.
