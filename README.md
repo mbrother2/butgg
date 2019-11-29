@@ -32,7 +32,7 @@ $HOME (/root or /home/$USER)
 # How to use
 **On Linux system:**
 ```
-curl -o butgg.bash https://raw.githubusercontent.com/mbrother2/backuptogoogle/master/butgg.bash
+curl -o butgg.bash https://raw.githubusercontent.com/mbrother2/butgg/master/butgg.bash
 bash butgg.bash --setup
 ```
 
