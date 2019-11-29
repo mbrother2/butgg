@@ -9,6 +9,6 @@ assignees: mbrother2
 
 **Your OS version:** 
 
-**Command:**
+**Command:** 
 
 **Detail log:**
