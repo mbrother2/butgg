@@ -286,6 +286,7 @@ _help(){
     echo "  --info       show info of file"
     echo "    name       show name only"
     echo "    mimeType   show mimeType only"
+    echo "    trashed    show file in trash or not"
     echo "  --download   download file. Not download directory"
     echo "  --help       show this help message and exit"
 }
