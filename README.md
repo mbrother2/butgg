@@ -40,6 +40,7 @@ bash butgg.bash --setup
 ##### [Create own Google credential step by step](https://github.com/mbrother2/butgg/wiki/Create-own-Google-credential-step-by-step)
 ##### [Get Google folder ID](https://github.com/mbrother2/butgg/wiki/Get-Google-folder-ID)
 ##### [Turn on 2 Step Verification & create app's password for Google email](https://github.com/mbrother2/butgg/wiki/Turn-on-2-Step-Verification-&-create-app's-password-for-Google-email)
+##### [How to use gdrive.bash](https://github.com/mbrother2/butgg/wiki/How-to-use-gdrive.bash)
 
 # Change log
 https://github.com/mbrother2/butgg/blob/master/CHANGLOG.md
