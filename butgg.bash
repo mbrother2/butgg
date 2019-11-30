@@ -240,7 +240,7 @@ setup_config(){
         read -p " Which email will be receive notify?: " EMAIL_TO
     fi
     echo ""
-    echo "LOG_FILE=${LOG_FILE}" >> ${BUTGG_CONF}
+    write_config LOG_FILE   "${DF_LOG_FILE}"   "${LOG_FILE}"
     write_config BACKUP_DIR "${DF_BACKUP_DIR}" "${BACKUP_DIR}"
     write_config DAY_REMOVE "${DF_DAY_REMOVE}" "${DAY_REMOVE}"
     write_config GDRIVE_ID  "${DF_GDRIVE_ID}"  "${GDRIVE_ID}"
