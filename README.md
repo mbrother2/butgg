@@ -304,7 +304,7 @@ https://github.com/mbrother2/butgg/issues
 ```
  
 ###### 3. Update
-`butgg.bash --update` (or `butgg.sh --update` on BSD system)
+`butgg.bash --update`
 Update to latest version
 ##### Example
 ```
