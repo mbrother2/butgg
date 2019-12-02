@@ -30,7 +30,7 @@ loop_dir(){
         else
             PR_ID_NAME="PARENTS_ID${DIR_DEPTH2}"
             echo "Uploading file $i..."
-            curl -s -X POST -L \
+            curl -# -X POST -L \
                     -H "Authorization: Bearer ${GG_TOKEN}" \
                     -F "metadata={name: \"$i\", parents: [\"${!PR_ID_NAME}\"]};type=application/json;charset=UTF-8" \
                     -F "file=@${REAL_PATH}" \
@@ -158,7 +158,7 @@ _upload(){
     fi
     check_info "${PARENTS_ID}"
     REAL_PATH=`realpath "$1"`
-    FILE_NAME=`echo $1 | grep -o '[^/]*$'`
+    FILE_NAME=`echo "$1" | sed '$s/\/$//' | grep -o '[^/]*$'`
     if [ -d "${REAL_PATH}" ]
     then
         echo "Creating directory ${FILE_NAME}..."
@@ -170,7 +170,7 @@ _upload(){
         loop_dir "${REAL_PATH}"
     else
         echo "Uploading file ${FILE_NAME}..."
-        curl -s -X POST -L https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart \
+        curl -# -X POST -L https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart \
                 -H "Authorization: Bearer ${GG_TOKEN}" \
                 -F "metadata={name: \"${FILE_NAME}\", parents: [\"${PARENTS_ID}\"]};type=application/json;charset=UTF-8" \
                 -F "file=@${REAL_PATH}" >/dev/null
@@ -266,7 +266,7 @@ _download(){
     fi
     FILE_NAME=`_info name "$1"`
     echo "Downloading file $1..."
-    curl -s "${GDRIVE_API}/files/$1?alt=media" -H "Authorization: Bearer ${GG_TOKEN}" -o "${FILE_NAME}"
+    curl -# "${GDRIVE_API}/files/$1?alt=media" -H "Authorization: Bearer ${GG_TOKEN}" -o "${FILE_NAME}"
 }
 
 _help(){
